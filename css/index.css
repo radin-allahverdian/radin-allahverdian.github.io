@@ -1,0 +1,111 @@
+body {
+    background-color: #222222;
+    height: 15000px;
+}
+
+.special-alert {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(10px + 0.5vw);
+    background-color: #555555;
+    height: 40px;
+    line-height: 40px;
+    border-top: 2px solid #46c531;
+}
+
+.razer-blade { 
+    height: 500px;
+}
+
+.razer-leviathan {
+    height: 500px;
+}
+
+.razer-camera {
+    height: 500px;
+}
+
+.razer-blade .text-part {
+    width: 90%;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    font-family: "RazerF5", Arial, Helvetica, sans-serif;
+}
+
+.razer-leviathan .text-razer-leviathan-part {
+    width: 90%;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+    font-family: "RazerF5", Arial, Helvetica, sans-serif;
+}
+
+.razer-camera .text-razer-camera-part {
+    width: 90%;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+    font-family: "RazerF5", Arial, Helvetica, sans-serif;
+}
+
+.razer-blade .text-part h1 {
+    font-size: calc(25px + 0.5vw);
+    font-weight: 600;
+}
+
+.razer-leviathan .text-razer-leviathan-part h1 {
+    font-size: calc(25px + 0.5vw);
+    font-weight: 600;
+}
+
+.razer-camera .text-razer-camera-part h1 {
+    font-size: calc(27px + 0.5vw);
+    font-weight: 600;
+}
+
+.razer-blade .text-part h2 {
+    font-size: calc(15px + 1vw);
+    font-weight: 400;
+}
+
+.razer-leviathan .text-razer-leviathan-part h3 {
+    font-size: calc(15px + 1vw);
+    font-weight: 400;
+}
+
+.razer-camera .text-razer-camera-part h3 {
+    font-size: calc(17px + 1vw);
+    font-weight: 400;
+}
+
+.razer-blade .text-part .link-part a:hover {
+    text-decoration: underline white !important;
+}
+
+.razer-leviathan .text-razer-leviathan-part a:hover {
+    text-decoration: underline white !important;
+}
+
+.razer-camera .text-razer-camera-part a:hover {
+    text-decoration: underline white !important;
+}
+
+@media all and (max-width:575px) {}
+
+@media all and (min-width:576px) and (max-width:767px) {}
+
+@media all and (min-width:991px) and (max-width:1199px) {
+    .razer-blade {
+        height: 650px;
+    }
+
+    .razer-leviathan {
+        height: 650px;
+    }
+
+    .razer-camera {
+        height: 650px;
+    }
+}
+
+@media all and (min-width:1200px) {}
