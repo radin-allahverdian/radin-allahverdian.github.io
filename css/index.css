@@ -12,7 +12,7 @@ body {
     border-top: 2px solid #46c531;
 }
 
-.razer-blade { 
+.razer-blade {
     height: 500px;
 }
 
@@ -21,6 +21,22 @@ body {
 }
 
 .razer-camera {
+    height: 500px;
+}
+
+.project-carol {
+    height: 500px;
+}
+
+.razer-enki {
+    height: 500px;
+}
+
+.razer-wolverine {
+    height: 500px;
+}
+
+.razer-vr {
     height: 500px;
 }
 
@@ -48,6 +64,38 @@ body {
     font-family: "RazerF5", Arial, Helvetica, sans-serif;
 }
 
+.project-carol .text-project-carol-part {
+    width: 90%;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.razer-enki .text-razer-enki-part {
+    width: 90%;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.razer-wolverine .text-razer-wolverine-part {
+    width: 90%;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.razer-vr .text-razer-vr-part {
+    width: 90%;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .razer-blade .text-part h1 {
     font-size: calc(25px + 0.5vw);
     font-weight: 600;
@@ -61,6 +109,26 @@ body {
 .razer-camera .text-razer-camera-part h1 {
     font-size: calc(27px + 0.5vw);
     font-weight: 600;
+}
+
+.project-carol .text-project-carol-part h1 {
+    font-size: calc(27px + 0.5vw);
+    font-weight: 600;
+}
+
+.razer-enki .text-razer-enki-part h1 {
+    font-weight: 600;
+    font-size: calc(27px + 0.5vw);
+}
+
+.razer-wolverine .text-razer-wolverine-part h1 {
+    font-weight: 600;
+    font-size: calc(27px + 0.5vw);
+}
+
+.razer-vr .text-razer-vr-part h1 {
+    font-weight: 600;
+    font-size: calc(27px + 0.5vw);
 }
 
 .razer-blade .text-part h2 {
@@ -78,6 +146,26 @@ body {
     font-weight: 400;
 }
 
+.project-carol .text-project-carol-part h3 {
+    font-size: calc(17px + 1vw);
+    font-weight: 400;
+}
+
+.razer-enki .text-razer-enki-part h3 {
+    font-size: calc(17px + 1vw);
+    font-weight: 400;
+}
+
+.razer-wolverine .text-razer-wolverine-part h3 {
+    font-size: calc(17px + 0.1vw);
+    font-weight: 400;
+}
+
+.razer-vr .text-razer-vr-part h3 {
+    font-size: calc(17px + 0.1vw);
+    font-weight: 400;
+}
+
 .razer-blade .text-part .link-part a:hover {
     text-decoration: underline white !important;
 }
@@ -90,11 +178,31 @@ body {
     text-decoration: underline white !important;
 }
 
+.project-carol .text-project-carol-part a:hover {
+    text-decoration: underline white !important;
+}
+
+.razer-enki .text-razer-enki-part a:hover {
+    text-decoration: underline white !important;
+}
+
+.razer-wolverine .text-razer-wolverine-part a:hover {
+    text-decoration: underline white !important;
+}
+
+.razer-vr .text-razer-vr-part a:hover {
+    text-decoration: underline white !important;
+}
+
 @media all and (max-width:575px) {}
 
 @media all and (min-width:576px) and (max-width:767px) {}
 
-@media all and (min-width:991px) and (max-width:1199px) {
+@media all and(min-width:768px) and (max-width:991px) {}
+
+@media all and (min-width:992px) and (max-width:1199px) {}
+
+@media all and (min-width:992px) {
     .razer-blade {
         height: 650px;
     }
@@ -104,6 +212,22 @@ body {
     }
 
     .razer-camera {
+        height: 650px;
+    }
+
+    .project-carol {
+        height: 650px;
+    }
+
+    .razer-enki {
+        height: 650px;
+    }
+
+    .razer-wolverine {
+        height: 650px;
+    }
+
+    .razer-vr {
         height: 650px;
     }
 }
