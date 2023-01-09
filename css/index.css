@@ -194,6 +194,54 @@ body {
     text-decoration: underline white !important;
 }
 
+/* --------------- footer css --------------- not in media or special size yet. */
+.bg-footer{
+    background-color: #111111;
+}
+
+.footer .item-part .item-header {
+    height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #b3b3b3;
+    font-size: calc(14px + 0.5vw);
+    line-height: 40px;
+    cursor: pointer;
+    padding-bottom: 20px;
+}
+
+.footer .item-part .item-header p {
+    line-height: 40px;
+}
+
+.footer .item-part .item-header .plus-icon {
+    font-size: 30px;
+    line-height: 40px;
+    right: 10px;
+}
+
+.footer .item-part ul{
+    border-bottom: 1px solid #b3b3b3;
+}
+.footer .item-part>ul>li {
+    line-height: 35px;
+}
+
+.footer .item-part ul>li>a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #b3b3b3;
+    font-size: calc(8px + 0.5vw);
+    padding: 10px;
+}
+
+.footer .item-part ul a:hover {
+    color: white;
+    text-decoration: underline white !important;
+}
+.footer .lst-message{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(12px + 0.5vw);
+}
+
 @media all and (max-width:575px) {}
 
 @media all and (min-width:576px) and (max-width:767px) {}
@@ -233,3 +281,7 @@ body {
 }
 
 @media all and (min-width:1200px) {}
+.hidden-height{
+    height: 0;
+    overflow: hidden;
+}
