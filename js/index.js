@@ -22,7 +22,8 @@ MenuIcon.addEventListener("click", function () {
         NavigationHeight.classList.remove("hidden-navigation");
         trueORfalse = false;
         document.body.style.overflow = "hidden";
-    } else if (trueORfalse == false) {
+    }
+    if (trueORfalse == false) {
         NavigationHeight.classList.add("hidden-navigation");
         trueORfalse = true;
         document.body.style.overflow = "auto";
