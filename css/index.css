@@ -203,7 +203,7 @@ body {
     height: 40px;
     font-family: Arial, Helvetica, sans-serif;
     color: #b3b3b3;
-    font-size: calc(14px + 0.5vw);
+    font-size: calc(12px + 0.5vw);
     line-height: 40px;
     cursor: pointer;
     padding-bottom: 20px;
@@ -220,7 +220,7 @@ body {
 }
 
 .footer .item-part ul{
-    border-bottom: 1px solid #b3b3b3;
+    border-bottom: 1.5px solid #353535;
 }
 .footer .item-part>ul>li {
     line-height: 35px;
@@ -240,6 +240,30 @@ body {
 .footer .lst-message{
     font-family: Arial, Helvetica, sans-serif;
     font-size: calc(12px + 0.5vw);
+}
+
+.last-message{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(7px + 0.5vw);
+    border-bottom: 1.5px solid #353535;
+}
+.last-message ul{
+    width: 35%;
+}
+.last-message ul>li>a{
+    color: #767676;
+}
+.last-message ul li:hover a{
+    color: white;
+    text-decoration: underline white !important;
+}
+
+.medias {user-select: none;}
+.medias p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(10px + 0.5vw);
+    color: #3fc629;
+    font-weight: 400;
 }
 
 @media all and (max-width:575px) {}
