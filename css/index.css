@@ -1,7 +1,11 @@
 body {
     background-color: #222222;
-    height: 15000px;
 }
+
+.nav {
+    height: 45px;
+}
+
 
 .special-alert {
     font-family: Arial, Helvetica, sans-serif;
@@ -195,7 +199,7 @@ body {
 }
 
 /* --------------- footer css --------------- not in media or special size yet. */
-.bg-footer{
+.bg-footer {
     background-color: #111111;
 }
 
@@ -219,9 +223,10 @@ body {
     right: 10px;
 }
 
-.footer .item-part ul{
+.footer .item-part ul {
     border-bottom: 1.5px solid #353535;
 }
+
 .footer .item-part>ul>li {
     line-height: 35px;
 }
@@ -237,29 +242,36 @@ body {
     color: white;
     text-decoration: underline white !important;
 }
-.footer .lst-message{
+
+.footer .lst-message {
     font-family: Arial, Helvetica, sans-serif;
     font-size: calc(12px + 0.5vw);
 }
 
-.last-message{
+.last-message {
     font-family: Arial, Helvetica, sans-serif;
     font-size: calc(7px + 0.5vw);
     border-bottom: 1.5px solid #353535;
 }
-.last-message ul{
-    width: 35%;
+
+.last-message ul {
+    width: 39%;
 }
-.last-message ul>li>a{
+
+.last-message ul>li>a {
     color: #767676;
 }
-.last-message ul li:hover a{
+
+.last-message ul li:hover a {
     color: white;
     text-decoration: underline white !important;
 }
 
-.medias {user-select: none;}
-.medias p{
+.medias {
+    user-select: none;
+}
+
+.medias p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: calc(10px + 0.5vw);
     color: #3fc629;
@@ -270,9 +282,111 @@ body {
 
 @media all and (min-width:576px) and (max-width:767px) {}
 
-@media all and(min-width:768px) and (max-width:991px) {}
+@media all and (min-width:768px) {
+    .nav .logo {
+        height: 45px;
+        width: 70px;
+        margin-top: -10px;
+    }
 
-@media all and (min-width:992px) and (max-width:1199px) {}
+    .nav ul {
+        width: 75%;
+        height: 100%;
+        line-height: 45px;
+    }
+
+    .nav ul li a {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: calc(13px + 0.5vw);
+        color: #7d7d7d;
+        padding: 10px;
+        transition: all 200ms linear 0s;
+    }
+
+    .nav ul li:hover a {
+        color: white;
+    }
+
+    .nav .Icon {
+        width: 45px;
+        height: 45px;
+        font-size: larger;
+        color: #7d7d7d;
+        cursor: pointer;
+        text-align: center;
+        line-height: 45px;
+        top: 0px;
+        transition: all 200ms linear 0s;
+    }
+
+    .nav .SearchIcon {
+        right: 15px;
+    }
+
+    .nav .CartIcon {
+        right: 56px;
+    }
+
+    .nav .Icon:hover {
+        color: white !important;
+    }
+}
+
+@media all and (max-width:767px) {
+    .nav .logo {
+        height: 38px;
+        width: 70px;
+        line-height: 30px;
+        cursor: pointer;
+    }
+
+    .nav .MenuIcon {
+        position: absolute;
+        left: 0;
+        top: 0;
+        cursor: pointer;
+        width: 60px;
+        height: 45px;
+        text-align: center;
+        line-height: 45px;
+        font-size: 35px;
+        color: white;
+    }
+
+    .nav ul {
+        width: 100%;
+        height: 100vh;
+        background-color: #222222;
+        z-index: 1;
+        padding-top: 10px;
+        /* transition: all 300ms linear 0s; */
+    }
+
+    .nav ul li:first-of-type {
+        margin-top: 40px;
+    }
+
+    .nav ul li {
+        width: 90%;
+        height: 60px;
+        /* background-color: red; */
+        border-bottom: 1.5px solid #4a4a4a;
+        line-height: 60px;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+
+    .nav ul li a {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #585858;
+        font-size: calc(17px + 0.5vw);
+        transition: all 100ms linear 0s;
+    }
+
+    .nav ul li:hover a{
+        color: white !important;
+    }
+}
 
 @media all and (min-width:992px) {
     .razer-blade {
@@ -305,7 +419,11 @@ body {
 }
 
 @media all and (min-width:1200px) {}
-.hidden-height{
-    height: 0;
+
+.hidden-height {
+    height: 0 !important;
     overflow: hidden;
+}
+.hidden-navigation{
+    display: none;
 }
