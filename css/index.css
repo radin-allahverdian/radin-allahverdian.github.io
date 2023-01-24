@@ -3,7 +3,7 @@ body {
 }
 
 .nav {
-    height: 45px;
+    height: 60px;
 }
 
 
@@ -13,36 +13,18 @@ body {
     background-color: #555555;
     height: 40px;
     line-height: 40px;
-    border-top: 2px solid #46c531;
 }
 
-.razer-blade {
-    height: 500px;
-}
-
-.razer-leviathan {
-    height: 500px;
-}
-
-.razer-camera {
-    height: 500px;
-}
-
-.project-carol {
-    height: 500px;
-}
-
-.razer-enki {
-    height: 500px;
-}
-
-.razer-wolverine {
-    height: 500px;
-}
-
+.razer-blade,
+.razer-leviathan,
+.razer-camera,
+.project-carol,
+.razer-enki,
+.razer-wolverine,
 .razer-vr {
     height: 500px;
 }
+
 
 .razer-blade .text-part {
     width: 90%;
@@ -199,49 +181,39 @@ body {
 }
 
 /* --------------- footer css --------------- not in media or special size yet. */
-.bg-footer {
+
+.hidden-ul {
+    display: none;
+    overflow: hidden !important;
+}
+
+.xxx {
     background-color: #111111;
 }
 
-.footer .item-part .item-header {
+.header-part,
+.second-header {
     height: 40px;
     font-family: Arial, Helvetica, sans-serif;
-    color: #b3b3b3;
     font-size: calc(12px + 0.5vw);
     line-height: 40px;
     cursor: pointer;
-    padding-bottom: 20px;
+    user-select: none;
 }
 
-.footer .item-part .item-header p {
-    line-height: 40px;
-}
-
-.footer .item-part .item-header .plus-icon {
-    font-size: 30px;
-    line-height: 40px;
-    right: 10px;
-}
-
-.footer .item-part ul {
-    border-bottom: 1.5px solid #353535;
-}
-
-.footer .item-part>ul>li {
-    line-height: 35px;
-}
-
-.footer .item-part ul>li>a {
+.footer ul li a {
     font-family: Arial, Helvetica, sans-serif;
-    color: #b3b3b3;
-    font-size: calc(8px + 0.5vw);
-    padding: 10px;
+    font-size: calc(11px + 0.5vw);
+    color: gray;
+    transition: all 250ms linear 0s;
 }
 
-.footer .item-part ul a:hover {
+.footer ul li a:hover {
+    cursor: pointer;
     color: white;
-    text-decoration: underline white !important;
+    text-decoration: underline !important;
 }
+
 
 .footer .lst-message {
     font-family: Arial, Helvetica, sans-serif;
@@ -252,6 +224,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: calc(7px + 0.5vw);
     border-bottom: 1.5px solid #353535;
+    background-color: #111111;
 }
 
 .last-message ul {
@@ -269,6 +242,7 @@ body {
 
 .medias {
     user-select: none;
+    background-color: #111111;
 }
 
 .medias p {
@@ -283,22 +257,34 @@ body {
 @media all and (min-width:576px) and (max-width:767px) {}
 
 @media all and (min-width:768px) {
+
+   
+
+    .header-part {
+        cursor: auto;
+    }
+
+    .nav {
+        border-bottom: 1px solid #3fc629;
+    }
+
     .nav .logo {
-        height: 45px;
+        height: 60px;
         width: 70px;
         margin-top: -10px;
     }
 
     .nav ul {
-        width: 75%;
+        width: 80%;
         height: 100%;
-        line-height: 45px;
+        line-height: 60px;
+        margin: 0px auto;
     }
 
     .nav ul li a {
         font-family: Arial, Helvetica, sans-serif;
-        font-size: calc(13px + 0.5vw);
-        color: #7d7d7d;
+        font-size: calc(11px + 0.5vw);
+        color: gray;
         padding: 10px;
         transition: all 200ms linear 0s;
     }
@@ -307,32 +293,51 @@ body {
         color: white;
     }
 
-    .nav .Icon {
-        width: 45px;
-        height: 45px;
-        font-size: larger;
+    .nav .ULIcon {
         color: #7d7d7d;
         cursor: pointer;
         text-align: center;
-        line-height: 45px;
+        line-height: 60px;
         top: 0px;
         transition: all 200ms linear 0s;
     }
 
-    .nav .SearchIcon {
-        right: 15px;
+    .nav .Icon {
+        width: 60px;
+        height: 60px;
+        font-size: larger;
+        color: #7d7d7d;
+        cursor: pointer;
+        text-align: center;
+        line-height: 60px;
+        top: 0px;
+        transition: all 200ms linear 0s;
     }
 
-    .nav .CartIcon {
-        right: 56px;
-    }
-
-    .nav .Icon:hover {
+    .nav .Icon:hover,
+    .ULIcon:hover {
         color: white !important;
     }
+
+
+    .plus-icon {
+        display: none;
+    }
+
+    .footer .item-part ul {
+        border-bottom: 0;
+    }
+
+
 }
 
 @media all and (max-width:767px) {
+    .footer {
+        width: 87%;
+        background-color: #111111;
+        border-bottom: 1.5px solid #353535;
+    }
+
     .nav .logo {
         height: 38px;
         width: 70px;
@@ -341,14 +346,15 @@ body {
     }
 
     .nav .MenuIcon {
+        z-index: 2;
         position: absolute;
         left: 0;
         top: 0;
         cursor: pointer;
         width: 60px;
-        height: 45px;
+        height: 60px;
         text-align: center;
-        line-height: 45px;
+        line-height: 60px;
         font-size: 35px;
         color: white;
     }
@@ -358,7 +364,7 @@ body {
         height: 100vh;
         background-color: #222222;
         z-index: 1;
-        padding-top: 10px;
+        padding-top: 20px;
         /* transition: all 300ms linear 0s; */
     }
 
@@ -383,8 +389,12 @@ body {
         transition: all 100ms linear 0s;
     }
 
-    .nav ul li:hover a{
+    .nav ul li:hover a {
         color: white !important;
+    }
+
+    .nav .mmICON {
+        display: none;
     }
 }
 
@@ -421,9 +431,16 @@ body {
 @media all and (min-width:1200px) {}
 
 .hidden-height {
-    height: 0 !important;
+    /* height: 0 !important; */
+    display: none !important;
     overflow: hidden;
 }
-.hidden-navigation{
+
+.hidden-navigation {
     display: none;
+}
+
+.mmm {
+    padding-top: 30px;
+    background-color: #111111;
 }

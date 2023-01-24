@@ -17,9 +17,9 @@
 
 <body>
 
-    <div class="container-fluid">
-        <div class="row d-flex align-items-center  nav">
-            <div class="mx-auto mx-md-0 logo">
+    <div class="container-fluid position-sticky top-0 z-3">
+        <div class="row d-flex align-items-center bg-black nav">
+            <div class="mx-auto mx-md-0 d-none logo">
                 <img src="images/razer-ths-logo.png" alt="razer-logo" class="w-100 h-100 d-none d-md-block">
             </div>
             <ul class="d-md-flex justify-content-evenly hidden-navigation navigation-height">
@@ -31,9 +31,17 @@
                 <li class="list-unstyled"><a href="#" class="text-decoration-none">Community</a></li>
                 <li class="list-unstyled"><a href="#" class="text-decoration-none">Support</a></li>
                 <li class="list-unstyled"><a href="#" class="text-decoration-none">Store</a></li>
+                <li class="list-unstyled px-2 mmICON">
+                    <a href="#" class="text-decoration-none">
+                        <i class="bi bi-search position-absolute SearchIcon ULIcon"></i>
+                    </a>
+                </li>
+                <li class="list-unstyled px-2 mmICON">
+                    <a href="#" class="text-decoration-none">
+                        <i class="bi bi-cart position-absolute CartIcon d-block ULIcon"></i>
+                    </a>
+                </li>
             </ul>
-            <i class="bi bi-search position-absolute SearchIcon d-none d-md-block Icon"></i>
-            <i class="bi bi-cart position-absolute CartIcon d-none d-md-block Icon"></i>
             <i class="bi bi-list d-md-none MenuIcon Icon"></i>
         </div>
     </div>
@@ -51,8 +59,8 @@
                     <h1>THE NEW RAZER BLADE 16 & 18</h1>
                     <h2>REGISTER YOUR INTEREST TODAY</h2>
                     <div class="link-part">
-                        <a href="#" class="text-decoration-none px-2 text-white d-inline-block">Razer Blade 16</a>
-                        <a href="#" class="text-decoration-none px-2 text-white d-inline-block">Razer Blade 18</a>
+                        <a href="#" class="text-decoration-none px-2 text-white d-inline-block">Razer Blade 16 <img src="images/arrow-right.png"></a>
+                        <a href="#" class="text-decoration-none px-2 text-white d-inline-block">Razer Blade 18 <img src="images/arrow-right.png"></a>
                     </div>
                 </div>
             </div>
@@ -65,8 +73,8 @@
                     <h1>RAZER LEVIATHAN V2 PRO</h1>
                     <h3>HEAD-TRACKING BEAMFORMING SOUNDBAR</h3>
                     <div class="text-razer-leviathan-links">
-                        <a href="#" class="text-decoration-none px-2 text-white">Learn More</a>
-                        <a href="#" class="text-decoration-none px-2 text-white">Buy</a>
+                        <a href="#" class="text-decoration-none px-2 text-white">Learn More <img src="images/arrow-right.png"></a>
+                        <a href="#" class="text-decoration-none px-2 text-white">Buy <img src="images/arrow-right.png"></a>
                     </div>
                 </div>
             </div>
@@ -78,8 +86,8 @@
                     <h1>RAZER camera V2 PRO</h1>
                     <h3>HEAD-TRACKING BEAMFORMING SOUNDBAR</h3>
                     <div class="text-razer-camera-links">
-                        <a href="#" class="text-decoration-none px-2 text-white">Learn More</a>
-                        <a href="#" class="text-decoration-none px-2 text-white">Buy</a>
+                        <a href="#" class="text-decoration-none px-2 text-white">Learn More <img src="images/arrow-right.png"></a>
+                        <a href="#" class="text-decoration-none px-2 text-white">Buy <img src="images/arrow-right.png"></a>
                     </div>
                 </div>
             </div>
@@ -90,7 +98,7 @@
                 <div class="position-absolute text-center text-white text-project-carol-part">
                     <h1>PROJECT CAROL</h1>
                     <h5 class="lh-base">IMMERSIVE HEAD SUPPORT WITH SURROUND SOUND AND HAPTICS</h3>
-                        <a href="#" class="text-decoration-none text-white">learn more</a>
+                        <a href="#" class="text-decoration-none text-white">learn more <img src="images/arrow-right.png"></a>
                 </div>
             </div>
             <div class="col-12 col-md-6 px-0 mx-0 mt-2  position-relative razer-enki">
@@ -100,8 +108,8 @@
                 <div class="position-absolute text-center text-white text-razer-enki-part">
                     <h1>Razer Enki Pro</h1>
                     <h5>AUTOMOBILI LAMBORGHINI EDITION</h3>
-                        <a href="#" class="text-decoration-none text-white px-2">Learn More</a>
-                        <a href="#" class="text-decoration-none text-white px-2">Buy</a>
+                        <a href="#" class="text-decoration-none text-white px-2">Learn More <img src="images/arrow-right.png"></a>
+                        <a href="#" class="text-decoration-none text-white px-2">Buy <img src="images/arrow-right.png"></a>
                 </div>
             </div>
         </div>
@@ -114,8 +122,8 @@
                 <div class="position-absolute text-center text-white text-razer-wolverine-part">
                     <h1>Razer Wolverine V2 Pro</h1>
                     <h3>Connect. Control. Conquer</h3>
-                    <a href="#" class="text-decoration-none text-white px-2">Learn More</a>
-                    <a href="#" class="text-decoration-none text-white px-2">Buy</a>
+                    <a href="#" class="text-decoration-none text-white px-2">Learn More <img src="images/arrow-right.png"></a>
+                    <a href="#" class="text-decoration-none text-white px-2">Buy <img src="images/arrow-right.png"></a>
                 </div>
             </div>
 
@@ -124,117 +132,80 @@
                 <div class="position-absolute text-center text-white text-razer-vr-part">
                     <h1>Razer VR Accessories</h1>
                     <h3>For Meta Quest 2</h3>
-                    <a href="#" class="text-decoration-none text-white px-2">Learn More</a>
-                    <a href="#" class="text-decoration-none text-white px-2">Buy</a>
+                    <a href="#" class="text-decoration-none text-white px-2">Learn More <img src="images/arrow-right.png"></a>
+                    <a href="#" class="text-decoration-none text-white px-2">Buy <img src="images/arrow-right.png"></a>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid">
-        <div class="row bg-footer">
-            <div class="col-12 mt-3 footer">
-                <div class="col-12 item-part">
-                    <div class="w-100 px-3 mt-2 pb-5 item-header">
-                        <p class="d-inline-block ">Shop</p>
-                        <i class="bi bi-plus d-inline-block position-absolute text-white text-center plus-icon"></i>
-                    </div>
-                    <ul class="p-0 d-flex flex-column m-0 hidden-height item-ul">
-                        <li class="list-unstyled ps-2 d-block"><a href="#" class="text-decoration-none">RazerStores</a>
-                        </li>
-                        <li class="list-unstyled ps-2 d-block"><a href="#" class="text-decoration-none">RazerCafe</a>
-                        </li>
-                        <li class="list-unstyled ps-2 d-block"><a href="#" class="text-decoration-none">Store
-                                Locator</a></li>
-                        <li class="list-unstyled ps-2 d-block"><a href="#" class="text-decoration-none">Purchase
-                                Programs</a></li>
-                        <li class="list-unstyled ps-2 d-block"><a href="#" class="text-decoration-none">Educations</a>
-                        </li>
-                        <li class="list-unstyled ps-2 pb-3 d-block"><a href="#"
-                                class="text-decoration-none">Exclusives</a></li>
-                    </ul>
+    <div class="container-fluid mmm">
+        <div class="row d-md-flex justify-content-md-evenly xxx">
+            <div class="col-12 mx-auto mt-3 mt-md-0 mx-md-0 col-md-3 text-white pb-2 footer">
+                <div class="w-100 text-start ps-2 pb-md-0 ps-md-5 header-part">
+                    <p class="ps-2 p-0 m-0">Projects</p>
                 </div>
-            </div>
-            <div class="col-12  footer">
-                <div class="col-12 item-part">
-                    <div class="w-100 px-3 mt-2 pb-5 item-header">
-                        <p class="d-inline-block ">Explore</p>
-                        <i class="bi bi-plus d-inline-block position-absolute text-white text-center plus-icon"></i>
-                    </div>
-                    <ul class="p-0 d-flex flex-column m-0 hidden-height item-ul">
-                        <li class="list-unstyled ps-2 d-block"><a href="#" class="text-decoration-none">RazerStores</a>
-                        </li>
-                        <li class="list-unstyled ps-2 d-block"><a href="#" class="text-decoration-none">RazerCafe</a>
-                        </li>
-                        <li class="list-unstyled ps-2 d-block"><a href="#" class="text-decoration-none">Store
-                                Locator</a></li>
-                        <li class="list-unstyled ps-2 d-block"><a href="#" class="text-decoration-none">Purchase
-                                Programs</a></li>
-                        <li class="list-unstyled ps-2 d-block"><a href="#" class="text-decoration-none">Educations</a>
-                        </li>
-                        <li class="list-unstyled ps-2 pb-3 d-block"><a href="#"
-                                class="text-decoration-none">Exclusives</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-12  footer">
-                <div class="col-12 item-part">
-                    <div class="w-100 px-3 mt-2 pb-5 item-header">
-                        <p class="d-inline-block ">Support</p>
-                        <i class="bi bi-plus d-inline-block position-absolute text-white text-center plus-icon"></i>
-                    </div>
-                    <ul class="p-0 d-flex flex-column m-0 hidden-height item-ul">
-                        <li class="list-unstyled ps-2 d-block"><a href="#" class="text-decoration-none">RazerStores</a>
-                        </li>
-                        <li class="list-unstyled ps-2 d-block"><a href="#" class="text-decoration-none">RazerCafe</a>
-                        </li>
-                        <li class="list-unstyled ps-2 d-block"><a href="#" class="text-decoration-none">Store
-                                Locator</a></li>
-                        <li class="list-unstyled ps-2 d-block"><a href="#" class="text-decoration-none">Purchase
-                                Programs</a></li>
-                        <li class="list-unstyled ps-2 d-block"><a href="#" class="text-decoration-none">Educations</a>
-                        </li>
-                        <li class="list-unstyled ps-2 pb-3 d-block"><a href="#"
-                                class="text-decoration-none">Exclusives</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-12 footer">
-                <div class="col-12 item-part">
-                    <div class="w-100 px-3 mt-2 pb-5 item-header">
-                        <p class="d-inline-block ">Company</p>
-                        <i class="bi bi-plus d-inline-block position-absolute text-white text-center plus-icon"></i>
-                    </div>
-                    <ul class="p-0 d-flex flex-column m-0  hidden-height item-ul">
-                        <li class="list-unstyled ps-2 d-block"><a href="#" class="text-decoration-none">RazerStores</a>
-                        </li>
-                        <li class="list-unstyled ps-2 d-block"><a href="#" class="text-decoration-none">RazerCafe</a>
-                        </li>
-                        <li class="list-unstyled ps-2 d-block"><a href="#" class="text-decoration-none">Store
-                                Locator</a></li>
-                        <li class="list-unstyled ps-2 d-block"><a href="#" class="text-decoration-none">Purchase
-                                Programs</a></li>
-                        <li class="list-unstyled ps-2 d-block"><a href="#" class="text-decoration-none">Educations</a>
-                        </li>
-                        <li class="list-unstyled ps-2  d-block"><a href="#" class="text-decoration-none">Exclusives</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-12 mt-4 pb-4 text-center text-white last-message">
-
-                <p class="d-inline">Copyright © 2023 Razer Inc. All rights reserved.</p>
-                <ul class="d-inline-flex flex-row p-0">
-                    <li class="list-unstyled px-2"><a class="text-decoration-none " href="#">Site Map</a></li>
-                    <li class="list-unstyled px-2"><a class="text-decoration-none " href="#">Legal Terms</a></li>
-                    <li class="list-unstyled px-2"><a class="text-decoration-none " href="#">Privacy Policy</a></li>
+                <ul class="p-1 hidden-ul d-md-block flex-column ps-md-5 text-start  MyUl">
+                    <li class="list-unstyled p-1"><a class="p-2 text-decoration-none" href="#">products</a></li>
+                    <li class="list-unstyled p-1"><a class="p-2 text-decoration-none" href="#">emails</a></li>
+                    <li class="list-unstyled p-1"><a class="p-2 text-decoration-none" href="#">social media</a></li>
+                    <li class="list-unstyled p-1"><a class="p-2 text-decoration-none" href="#">backgrounds</a></li>
+                    <li class="list-unstyled p-1"><a class="p-2 text-decoration-none" href="#">outgoing</a></li>
                 </ul>
             </div>
-            <div class="col-12 pt-2 text-center pb-2 medias">
-                <p class="d-inline">FOR GAMERS. BY GAMERS.™</p>
-                <a href="#"><img src="images/icons8-facebook-24.png" alt="facebook"></a>
-                <a href="#"><img src="images/icons8-instagram-24.png" alt="instagram"></a>
+            <div class="col-12 mx-auto mx-md-0 col-md-3 pb-2 text-white footer">
+                <div class="w-100 text-start ps-2 pb-3 pb-md-0 ps-md-5 header-part">
+                    <p class="ps-2 p-0 m-0"">Projects</p>
+                </div>
+                <ul class="p-1 hidden-ul d-md-block flex-column ps-md-5  MyUl">
+                    <li class="list-unstyled p-1"><a class="p-2 text-decoration-none" href="#">products</a></li>
+                    <li class="list-unstyled p-1"><a class="p-2 text-decoration-none" href="#">emails</a></li>
+                    <li class="list-unstyled p-1"><a class="p-2 text-decoration-none" href="#">social media</a></li>
+                    <li class="list-unstyled p-1"><a class="p-2 text-decoration-none" href="#">backgrounds</a></li>
+                    <li class="list-unstyled p-1"><a class="p-2 text-decoration-none" href="#">outgoing</a></li>
+                </ul>
+            </div>
+            <div class="col-12 mx-auto mx-md-0 col-md-3  pb-2 text-white footer">
+                <div class="w-100 text-start ps-2 pb-3 pb-md-0 ps-md-5 header-part">
+                    <p class="ps-2 p-0 m-0"">Projects</p>
+                </div>
+                <ul class="p-1 hidden-ul d-md-block flex-column ps-md-5  MyUl">
+                    <li class="list-unstyled p-1"><a class="p-2 text-decoration-none" href="#">products</a></li>
+                    <li class="list-unstyled p-1"><a class="p-2 text-decoration-none" href="#">emails</a></li>
+                    <li class="list-unstyled p-1"><a class="p-2 text-decoration-none" href="#">social media</a></li>
+                    <li class="list-unstyled p-1"><a class="p-2 text-decoration-none" href="#">backgrounds</a></li>
+                    <li class="list-unstyled p-1"><a class="p-2 text-decoration-none" href="#">outgoing</a></li>
+                </ul>
+            </div>
+            <div class="col-12 mx-auto mx-md-0 col-md-3 pb-2 text-white footer">
+                <div class="w-100 text-start ps-2 pb-3 pb-md-0 ps-md-5 header-part">
+                    <p class="ps-2 p-0 m-0"">Projects</p>
+                </div>
+                <ul class="p-1 hidden-ul d-md-block flex-column ps-md-5  MyUl">
+                    <li class="list-unstyled p-1"><a class="p-2 text-decoration-none" href="#">products</a></li>
+                    <li class="list-unstyled p-1"><a class="p-2 text-decoration-none" href="#">emails</a></li>
+                    <li class="list-unstyled p-1"><a class="p-2 text-decoration-none" href="#">social media</a></li>
+                    <li class="list-unstyled p-1"><a class="p-2 text-decoration-none" href="#">backgrounds</a></li>
+                    <li class="list-unstyled p-1"><a class="p-2 text-decoration-none" href="#">outgoing</a></li>
+                </ul>
             </div>
         </div>
+
+
+        <div class="col-12 mt-4 pb-4 text-center text-white last-message">
+
+            <p class="d-inline">Copyright © 2023 Razer Inc. All rights reserved.</p>
+            <ul class="d-inline-flex flex-row p-0">
+                <li class="list-unstyled px-2"><a class="text-decoration-none " href="#">Site Map</a></li>
+                <li class="list-unstyled px-2"><a class="text-decoration-none " href="#">Legal Terms</a></li>
+                <li class="list-unstyled px-2"><a class="text-decoration-none " href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="col-12 pt-2 text-center pb-2 medias">
+            <p class="d-inline">FOR GAMERS. BY GAMERS.™</p>
+            <a href="#"><img src="images/icons8-facebook-24.png" alt="facebook"></a>
+            <a href="#"><img src="images/icons8-instagram-24.png" alt="instagram"></a>
+        </div>
+    </div>
     </div>
     <script src="js/index.js"></script>
 </body>

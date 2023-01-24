@@ -1,17 +1,17 @@
-const itemClicker = document.querySelectorAll(".item-header");
-const itemUL = document.querySelectorAll(".item-ul");
+const headerPart = document.querySelectorAll(".header-part");
+const myUl = document.querySelectorAll(".MyUl");
 
-itemClicker[0].addEventListener("click", function () {
-    itemUL[0].classList.toggle("hidden-height");
+headerPart[0].addEventListener("click", function () {
+    myUl[0].classList.toggle("hidden-ul");
 });
-itemClicker[1].addEventListener("click", function () {
-    itemUL[1].classList.toggle("hidden-height");
+headerPart[1].addEventListener("click", function () {
+    myUl[1].classList.toggle("hidden-ul");
 });
-itemClicker[2].addEventListener("click", function () {
-    itemUL[2].classList.toggle("hidden-height");
+headerPart[2].addEventListener("click", function () {
+    myUl[2].classList.toggle("hidden-ul");
 });
-itemClicker[3].addEventListener("click", function () {
-    itemUL[3].classList.toggle("hidden-height");
+headerPart[3].addEventListener("click", function () {
+    myUl[3].classList.toggle("hidden-ul");
 });
 
 const MenuIcon = document.querySelector(".MenuIcon");
