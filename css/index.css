@@ -328,7 +328,6 @@ body {
         border-bottom: 0;
     }
 
-
 }
 
 @media all and (max-width:767px) {
@@ -396,6 +395,12 @@ body {
     .nav .mmICON {
         display: none;
     }
+
+    .PlusIcon{
+        position: absolute;
+        right: 0;
+        top: 10px;
+    }
 }
 
 @media all and (min-width:992px) {
@@ -443,4 +448,7 @@ body {
 .mmm {
     padding-top: 30px;
     background-color: #111111;
+}
+.plusiconstyle{
+    transform: rotate(45deg) !important;
 }
